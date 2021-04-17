@@ -12,31 +12,31 @@ closeMenu.addEventListener('click', close);
 navTipke.addEventListener('click', function () {
     var node = this;
     setTimeout(function() {
-        mainMenu.style.top = '-100%';
+        mainMenu.style.top = '-200%';
     }, 600)
 });
 navTipke2.addEventListener('click', function () {
     var node = this;
     setTimeout(function() {
-        mainMenu.style.top = '-100%';
+        mainMenu.style.top = '-200%';
     }, 600)
 });
 navTipke3.addEventListener('click', function () {
     var node = this;
     setTimeout(function() {
-        mainMenu.style.top = '-100%';
+        mainMenu.style.top = '-200%';
     }, 600)
 });
 navTipke4.addEventListener('click', function () {
     var node = this;
     setTimeout(function() {
-        mainMenu.style.top = '-100%';
+        mainMenu.style.top = '-200%';
     }, 600)
 });
 navTipke5.addEventListener('click', function () {
     var node = this;
     setTimeout(function() {
-        mainMenu.style.top = '-100%';
+        mainMenu.style.top = '-200%';
     }, 600)
 });
 
@@ -48,5 +48,5 @@ function show(){
 
 
 function close(){
-    mainMenu.style.top = '-100%';
+    mainMenu.style.top = '-200%';
 }
