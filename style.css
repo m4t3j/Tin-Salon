@@ -51,7 +51,7 @@ a{
   }
 
   .primarybutton:hover{
-      background-color: #1d2528;
+      background-color: rgb(29, 37, 40);
       color: #dca47d;
   }
 .container{
@@ -198,14 +198,15 @@ h3{
   }
 
 /* TESTEMONIALS */
-.test{
+
+/* .test{
     text-align: center;
     padding: 80px 0;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    color: white;
+    color:#dca47d;
     background-image: url(images/onama.jpg);
     background-position: center;
     background-size: cover;
@@ -217,17 +218,21 @@ h3{
 }
 
 .test .wrapper{
-    padding-right: 0;
+    padding: 30px;
+    background-color: rgba(29, 37, 40, 0.6);
+    border-radius: 25px;
 }
 
-.test .wrapper h2{
+
+.test .wrapper h2,
+.test .wrapper2 h2{
     margin-bottom: 32px;
     font-family: 'Parisienne', cursive;
     font-weight: 400;
     line-height: 1;
     font-size: 60px;
     letter-spacing: -0.04em;
-}
+} */
 
   /* CTA */
 .cta{
@@ -249,7 +254,6 @@ h3{
   
   .wrapper h2{
     margin-bottom: 32px;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     line-height: 1;
     font-size: 2.4em;
@@ -329,6 +333,7 @@ h3{
 .galerija h1{
     display: inline-block;
     border-bottom: 4px solid #dca47d;
+    color: #1d2528;
     font-size: 2.4em;
     padding-bottom: 10px;
     margin-top: 40px; 
@@ -472,6 +477,20 @@ h3{
 }
 
 @media screen and (max-width: 768px){
+    .image-gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        grid-template-areas:
+                'img-1'
+                'img-2'
+                'img-3'
+                'img-4'
+                'img-5'
+                'img-6';
+    }
+
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -525,11 +544,15 @@ h3{
         text-align: center;
         align-items: center;
         padding-top: 60px;
-        padding-bottom: 0;
+        padding-bottom: 40px;
     }
 
     .onama .container{
         max-width: 550px;
+    }
+
+    .test .wrapper h2{
+        font-size: 45px;
     }
 
     .grid2{
